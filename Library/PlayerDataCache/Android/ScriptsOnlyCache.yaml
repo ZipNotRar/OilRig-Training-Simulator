@@ -1,5 +1,18 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - GestureDetector
+    - HandTrackinGrabber
+    - JoystickControl
+    - LeverEvents
+    - OculusSampleFramework.FingerTipPokeTool
+    - OculusSampleFramework.FingerTipPokeToolView
+    - OculusSampleFramework.HandsManager
+    - OculusSampleFramework.InteractableToolsCreator
+    - OculusSampleFramework.InteractableToolsInputRouter
+    - OculusSampleFramework.RayTool
+    - OculusSampleFramework.RayToolView
+    - PhysicsButton
     Oculus.Platform.dll:
     - Oculus.Platform.PlatformSettings
     Oculus.Spatializer.dll:
@@ -10,8 +23,8 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRControllerHelper
-    - OVRCustomSkeleton
     - OVRDebugInfo
+    - OVRGrabbable
     - OVRHand
     - OVRHeadsetEmulator
     - OVRManager
@@ -50,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 59
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -75,42 +90,66 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12384}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12440}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 12642}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12462}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12752}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 13424}
+      Script: {instanceID: 13120}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 13266}
     - Class: 114
-      Script: {instanceID: 13864}
+      Script: {instanceID: 13308}
     - Class: 114
-      Script: {instanceID: 14100}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 14460}
+      Script: {instanceID: 13432}
     - Class: 114
-      Script: {instanceID: 14972}
+      Script: {instanceID: 13490}
     - Class: 114
-      Script: {instanceID: 21578}
+      Script: {instanceID: 13694}
+    - Class: 114
+      Script: {instanceID: 13740}
+    - Class: 114
+      Script: {instanceID: 13860}
+    - Class: 114
+      Script: {instanceID: 13874}
+    - Class: 114
+      Script: {instanceID: 14110}
+    - Class: 114
+      Script: {instanceID: 14384}
+    - Class: 114
+      Script: {instanceID: 14470}
+    - Class: 114
+      Script: {instanceID: 14862}
+    - Class: 114
+      Script: {instanceID: 14982}
+    - Class: 114
+      Script: {instanceID: 32452}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 138
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -417,6 +456,12 @@ ScriptsOnlyBuild:
     className: OVRMixedRealityCaptureTest
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: 30faf1e024df75b64cf013ffe0da6171
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -547,6 +592,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 1632ef94bffca2461f0212f9d9ecbafa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeverEvents
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -811,6 +862,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnalyticsUI
+  - hash:
+      serializedVersion: 2
+      Hash: ca6db95369cd003aaa3249b8f56e0a2f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GestureDetector
   - hash:
       serializedVersion: 2
       Hash: 0498232dd48b097128db9129acff161b
@@ -1257,6 +1314,12 @@ ScriptsOnlyBuild:
     className: EyeCamera
   - hash:
       serializedVersion: 2
+      Hash: 4c99ee0145faab3931c9377720ed7e38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandTrackinGrabber
+  - hash:
+      serializedVersion: 2
       Hash: 9e5b79eaffb4a828a08c59fb1d2f2d1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
@@ -1351,6 +1414,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 076b3dac57f3a1c22a93e364a06d80de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhysicsButton
   - hash:
       serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
@@ -1843,6 +1912,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a3126e649413979e08f10b2f5c8d8bfc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickControl
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
