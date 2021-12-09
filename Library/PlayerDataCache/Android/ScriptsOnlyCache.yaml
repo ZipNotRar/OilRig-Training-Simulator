@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - OculusSampleFramework.RayTool
     - OculusSampleFramework.RayToolView
     - PhysicsButton
+    - PlayerMovement
     Oculus.Platform.dll:
     - Oculus.Platform.PlatformSettings
     Oculus.Spatializer.dll:
@@ -88,6 +89,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11616}
     - Class: 114
       Script: {instanceID: 11796}
+    - Class: 114
+      Script: {instanceID: 12056}
     - Class: 114
       Script: {instanceID: 12060}
     - Class: 114
@@ -453,7 +456,7 @@ ScriptsOnlyBuild:
     className: OVRMixedRealityCaptureTest
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 285760b39465e5a1831c177da40c3ec7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -861,7 +864,7 @@ ScriptsOnlyBuild:
     className: AnalyticsUI
   - hash:
       serializedVersion: 2
-      Hash: ca6db95369cd003aaa3249b8f56e0a2f
+      Hash: 9b7e399fd73dfc582d85aea5e996b0bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GestureDetector

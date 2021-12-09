@@ -16,26 +16,36 @@ public class GestureDetector : MonoBehaviour
     public List<Gesture> gestures;
     public bool debugMode = true;
     private List<OVRBone> fingerBones;
-    private Gesture previousGesture;
+    //private Gesture previousGesture;
+    public UnityEvent notRecognized;
     void Start()
     {
         fingerBones = new List<OVRBone>(skeleton.Bones);
-        previousGesture = new Gesture();
+        //previousGesture = new Gesture();
     }
     void Update()
     {
         if (debugMode && Input.GetKeyDown(KeyCode.Space))
         {
-            fingerBones = new List<OVRBone>(skeleton.Bones);
+            //fingerBones = new List<OVRBone>(skeleton.Bones);
             Save();
         }
         Gesture currentGesture = Recognize();
         bool hasRecognized = !currentGesture.Equals(new Gesture());
-        if(hasRecognized && !currentGesture.Equals(previousGesture))
+        // if(hasRecognized && !currentGesture.Equals(previousGesture))
+        // {
+        //     Debug.Log("New gesture found :" + currentGesture.name);
+        //     previousGesture = currentGesture;
+        //     currentGesture.onRecognized.Invoke();
+        // }
+        if (hasRecognized)
         {
-            Debug.Log("New gesture found :" + currentGesture.name);
-            previousGesture = currentGesture;
             currentGesture.onRecognized.Invoke();
+        }
+        else 
+        {
+            //notRecognized.Equals(true);
+            notRecognized.Invoke();
         }
     }
     void Save() 

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Vector3 moveDirection;
+    public CharacterController cc;
     public float speed = 5;
     // Start is called before the first frame update
     void Start()
     {
-        
+      cc = GetComponent<CharacterController>(); 
     }
 
     // Update is called once per frame
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         move();
     }
     public void move(){
-        transform.position = new Vector3(transform.position.x+5, 0, 0) * speed * Time.deltaTime;
+        moveDirection = transform.TransformDirection(Vector3.forward)*speed;
+        var flags = cc.Move(moveDirection*Time.deltaTime);
     }
 }
