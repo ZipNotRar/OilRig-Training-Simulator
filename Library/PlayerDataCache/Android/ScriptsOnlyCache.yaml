@@ -1518,7 +1518,7 @@ ScriptsOnlyBuild:
     className: OVRMeshRenderer
   - hash:
       serializedVersion: 2
-      Hash: a3126e649413979e08f10b2f5c8d8bfc
+      Hash: d22b0b7788e9224913bdd86d31149435
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JoystickControl
