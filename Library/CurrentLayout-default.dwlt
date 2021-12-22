@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 108
+  controlID: 114
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 989
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -375,8 +375,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 12440000
-    m_LastClickedID: 17426
+    m_SelectedIDs: e2430000
+    m_LastClickedID: 17378
     m_ExpandedIDs: 0000000096430000984300009a4300009c43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -528,23 +528,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 803d0000
-      m_LastClickedID: 15744
-      m_ExpandedIDs: e2faffff68fbfffffa3d0000
+      m_SelectedIDs: 6a3d0000
+      m_LastClickedID: 15722
+      m_ExpandedIDs: e2faffff68fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Oil_Rig_scene___Updated___01
-        m_OriginalName: Oil_Rig_scene___Updated___01
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1310
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -590,9 +590,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.728, y: 30.632, z: -8.419}
+    m_Target: {x: -8.593821, y: 38.635677, z: 9.4087715}
     speed: 2
-    m_Value: {x: 7.727946, y: 30.63192, z: -8.418973}
+    m_Value: {x: -8.593821, y: 38.635677, z: 9.4087715}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -638,13 +638,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0012469749, y: -0.98075294, z: 0.19524717, w: -0.006184671}
+    m_Target: {x: -0.052895356, y: -0.9418173, z: 0.28054464, w: -0.17752378}
     speed: 2
-    m_Value: {x: -0.0012562263, y: -0.9804406, z: 0.1967144, w: -0.0061826785}
+    m_Value: {x: -0.052473493, y: -0.94206476, z: 0.2806184, w: -0.17610753}
   m_Size:
     m_Target: 0.6537782
     speed: 2
-    m_Value: 0.6541461
+    m_Value: 0.6537782
   m_Ortho:
     m_Target: 0
     speed: 2
