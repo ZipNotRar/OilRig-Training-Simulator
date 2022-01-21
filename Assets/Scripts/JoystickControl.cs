@@ -14,9 +14,10 @@ public class JoystickControl : MonoBehaviour
     public UnityEvent onBackwardTilt;
     public Transform l_hand;
     public Transform r_hand;
-    // Update is called once per frame
-    void Start() { 
-    }
+
+    public GameObject alarm;
+
+    int hitCount = 0;
     void Update()
     {
         forwardBackWardTilt = topOfJoystick.rotation.eulerAngles.x;
@@ -42,6 +43,7 @@ public class JoystickControl : MonoBehaviour
         // {
         //     Debug.Log("Left" + sideTosideTilt);
         // }
+        // Debug.Log(hitCount);
     }
 
     private void OnTriggerStay(Collider other)
@@ -51,6 +53,23 @@ public class JoystickControl : MonoBehaviour
             transform.LookAt(new Vector3(l_hand.position.x ,l_hand.position.y, transform.position.z), transform.up);
             transform.LookAt(new Vector3(r_hand.position.x, r_hand.position.y, transform.position.z), transform.up);
             //transform.LookAt(other.transform.position, transform.up);
+        }
+        if (other.name == "Forward")
+        {
+            hitCount+= 1;
+
+        }
+        else if (other.name == "Backward")
+        {
+            hitCount+= 1;
+        }
+        if (hitCount >= 2000)
+        {
+            alarm.SetActive(true);
+        }
+        if (hitCount == 2000)
+        {
+            alarm.tag = "fireAlarmTag";
         }
     }
 }

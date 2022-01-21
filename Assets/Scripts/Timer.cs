@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.IO;
 [System.Serializable]
 public class Timer : MonoBehaviour
 {
@@ -43,5 +44,12 @@ public class Timer : MonoBehaviour
        loadTime = data.currentIme;
        TimeSpan time = TimeSpan.FromSeconds(loadTime);
        loadSavedTime.text = time.ToString(@"mm\:ss\:fff");
+       string savedPath = Application.persistentDataPath + "/Timestamp.txt";
+       if (!File.Exists(savedPath))
+       {
+           File.WriteAllText(savedPath, "");
+       }
+        string savedContent = "The last session recorded on " + System.DateTime.Now + " is " + loadSavedTime.text + "\n";
+        File.AppendAllText(savedPath, savedContent);
     }
 }

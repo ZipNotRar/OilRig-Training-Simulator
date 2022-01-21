@@ -10,7 +10,7 @@ public static class SaveSystem
     {
         BinaryFormatter formatter = new BinaryFormatter();
 
-        string path = Application.persistentDataPath + "/timer.savefile";
+        string path = Application.persistentDataPath + "/timer.dat";
         FileStream stream = new FileStream(path, FileMode.Create);
 //        PlayerData data = new PlayerData(saveData);
         PlayerData data = new PlayerData(timer);
@@ -19,7 +19,7 @@ public static class SaveSystem
     }
     public static PlayerData LoadPlayer()
     {
-        string path = Application.persistentDataPath + "/timer.savefile";
+        string path = Application.persistentDataPath + "/timer.dat";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();

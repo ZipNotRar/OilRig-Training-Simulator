@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - FireSignalRepeat
     - GestureDetector
     - HandTrackinGrabber
     - JoystickControl
@@ -16,6 +17,7 @@ ScriptsOnlyBuild:
     - SaveData
     - Timer
     - TriggerSystem
+    - tempChange
     Oculus.Platform.dll:
     - Oculus.Platform.PlatformSettings
     Oculus.Spatializer.dll:
@@ -46,6 +48,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -86,6 +96,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -115,71 +127,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12472}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 12490}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 12618}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12682}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 12782}
+      Script: {instanceID: 12784}
     - Class: 114
-      Script: {instanceID: 12838}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 12992}
+      Script: {instanceID: 12994}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13340}
+      Script: {instanceID: 13302}
     - Class: 114
-      Script: {instanceID: 13380}
+      Script: {instanceID: 13344}
     - Class: 114
-      Script: {instanceID: 13462}
+      Script: {instanceID: 13384}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13522}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 13726}
+      Script: {instanceID: 13470}
     - Class: 114
-      Script: {instanceID: 13772}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13732}
     - Class: 114
-      Script: {instanceID: 13892}
+      Script: {instanceID: 13778}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13884}
     - Class: 114
-      Script: {instanceID: 13906}
+      Script: {instanceID: 13898}
     - Class: 114
-      Script: {instanceID: 14142}
+      Script: {instanceID: 13908}
     - Class: 114
-      Script: {instanceID: 14160}
+      Script: {instanceID: 13912}
     - Class: 114
-      Script: {instanceID: 14356}
+      Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 14166}
     - Class: 114
-      Script: {instanceID: 14504}
+      Script: {instanceID: 14362}
     - Class: 114
-      Script: {instanceID: 14648}
+      Script: {instanceID: 14424}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14510}
     - Class: 114
-      Script: {instanceID: 14898}
+      Script: {instanceID: 14654}
     - Class: 114
-      Script: {instanceID: 15018}
+      Script: {instanceID: 14824}
+    - Class: 114
+      Script: {instanceID: 14904}
     - Class: 114
       Script: {instanceID: 15024}
     - Class: 114
-      Script: {instanceID: 15036}
+      Script: {instanceID: 15030}
+    - Class: 114
+      Script: {instanceID: 15042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -689,6 +705,12 @@ ScriptsOnlyBuild:
     className: GrabbableCrosshair
   - hash:
       serializedVersion: 2
+      Hash: 69723ec3844392eed7c3008933c73781
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: cddda176806387fb79934d7957e07c80
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -737,7 +759,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarSettings
   - hash:
       serializedVersion: 2
-      Hash: 78b4051b11eaad3272f0138c2f2b7a07
+      Hash: d29377f2867d752a48898e3df65f65c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TriggerSystem
@@ -885,6 +907,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: InteractableRegistry
+  - hash:
+      serializedVersion: 2
+      Hash: 40e78ede43ad944a0982b4cddb0af94a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FireSignalRepeat
   - hash:
       serializedVersion: 2
       Hash: f41dc612e461acf568bc5ca2f9d3c8ea
@@ -1217,6 +1245,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 339763de1b8a7cc270e7d4d7bc21d140
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tempChange
+  - hash:
+      serializedVersion: 2
       Hash: 8f71d2ab3258f223c82a0616125cd43f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1475,7 +1509,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 076b3dac57f3a1c22a93e364a06d80de
+      Hash: f17b1f3e3f1e7ed8988f61d246e526b0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhysicsButton
@@ -1577,7 +1611,7 @@ ScriptsOnlyBuild:
     className: OVRMeshRenderer
   - hash:
       serializedVersion: 2
-      Hash: d22b0b7788e9224913bdd86d31149435
+      Hash: e319c8d05bf58a53ac0afd2867458dc3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JoystickControl
@@ -1986,4 +2020,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: D:/GitHub/OilRig Training Simulator/OilRig Training Sim2.apk
+  playerPath: D:/GitHub/OilRig Training Simulator/OilRig Trainer_v2.apk

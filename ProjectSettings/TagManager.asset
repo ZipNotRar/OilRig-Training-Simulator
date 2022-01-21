@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerHand
+  - rw2
+  - rw6
+  - rw1
+  - fireAlarmTag
+  - TempHigh
+  - Pipe_B
   layers:
   - Default
   - TransparentFX

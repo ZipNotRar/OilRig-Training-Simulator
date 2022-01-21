@@ -8,7 +8,7 @@ public class PhysicsButton : MonoBehaviour
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone = .025f;
 
-    private bool _isPressed;
+    public bool _isPressed = false;
     private Vector3 _startPos;
     private ConfigurableJoint _joint;
     public UnityEvent onPressed, onReleased;
