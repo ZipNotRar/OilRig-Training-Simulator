@@ -16,6 +16,7 @@ public class JoystickControl : MonoBehaviour
     public Transform r_hand;
 
     public GameObject alarm;
+    public bool looking;
 
     int hitCount = 0;
     void Update()
@@ -50,18 +51,27 @@ public class JoystickControl : MonoBehaviour
     {
         if(other.GetComponentInParent<SphereCollider>())
         {
-            transform.LookAt(new Vector3(l_hand.position.x ,l_hand.position.y, transform.position.z), transform.up);
-            transform.LookAt(new Vector3(r_hand.position.x, r_hand.position.y, transform.position.z), transform.up);
-            //transform.LookAt(other.transform.position, transform.up);
+            looking = true;
+            //transform.LookAt(new Vector3(transform.position.x ,l_hand.position.y, l_hand.position.z), transform.up);
+            //changed code from (l_hand.position.x ,l_hand.position.y, transform.position.z) to (transform.position.x ,l_hand.position.y, l_hand.position.z)
+
+            //transform.LookAt(new Vector3(transform.position.x, r_hand.position.y, r_hand.position.z), transform.up);
+            //changed code 54 from (r_hand.position.x, r_hand.position.y, transform.position.z)
+            if (looking)
+            {
+            transform.LookAt(new Vector3(transform.position.x ,l_hand.position.y, l_hand.position.z), transform.up);
+            transform.LookAt(new Vector3(transform.position.x, r_hand.position.y, r_hand.position.z), transform.up);
+            }//transform.LookAt(other.transform.position, transform.up);
         }
         if (other.name == "Forward")
         {
             hitCount+= 1;
-
+            looking = false;
         }
         else if (other.name == "Backward")
         {
             hitCount+= 1;
+            looking = false;
         }
         if (hitCount >= 2000)
         {

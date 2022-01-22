@@ -51,10 +51,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1611,7 +1609,7 @@ ScriptsOnlyBuild:
     className: OVRMeshRenderer
   - hash:
       serializedVersion: 2
-      Hash: e319c8d05bf58a53ac0afd2867458dc3
+      Hash: c187f8f4ae0acccdb8fccb8bd8206d3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JoystickControl
@@ -2020,4 +2018,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: D:/GitHub/OilRig Training Simulator/OilRig Trainer_v2.apk
+  playerPath: D:/GitHub/OilRig Training Simulator/OilRig Trainer.apk
