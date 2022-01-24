@@ -177,7 +177,9 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\StartScene\Scripts\StartMenu.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\DoorGrabbable.cs" />
      <Compile Include="Assets\Scripts\FireSignalRepeat.cs" />
+     <Compile Include="Assets\Scripts\FollowPhysics.cs" />
      <Compile Include="Assets\Scripts\GestureDetector.cs" />
      <Compile Include="Assets\Scripts\HandTrackinGrabber.cs" />
      <Compile Include="Assets\Scripts\JoystickControl.cs" />

@@ -204,8 +204,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
-    - Class: 138
-      Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
     - Class: 153
@@ -2015,6 +2013,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FollowPhysics
+  - hash:
+      serializedVersion: 2
+      Hash: 7ad51158800ec260bd61401f86681c51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorGrabbable
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
