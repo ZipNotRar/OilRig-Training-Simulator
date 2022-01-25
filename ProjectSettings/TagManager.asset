@@ -11,6 +11,7 @@ TagManager:
   - fireAlarmTag
   - TempHigh
   - Pipe_B
+  - rw5
   layers:
   - Default
   - TransparentFX

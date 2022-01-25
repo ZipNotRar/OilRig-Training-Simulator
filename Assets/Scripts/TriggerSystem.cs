@@ -14,7 +14,13 @@ public class TriggerSystem : MonoBehaviour
     public GameObject rw6;
     public GameObject alarm;
     public GameObject pipeB;
-
+    public GameObject rw5;
+    public GameObject whiteLight;
+    public GameObject crowbar;
+    public GameObject key;
+    public GameObject cbSpawnner;
+    public GameObject keySpawnner;
+    public bool isInstantiated;
     private void Start() {
         physicsButton.GetComponent<PhysicsButton>();
     }
@@ -60,6 +66,24 @@ public class TriggerSystem : MonoBehaviour
             timer.LoadPlayer();
             pipeB.tag = "Untagged";
             rw6.tag = "Untagged";
+        }
+        if (other.GetComponent<OVRPlayerController>() && rw5.tag == "rw5")
+        {
+            timer.StartTimer();
+        }
+        if (other.GetComponent<OVRPlayerController>() && whiteLight.activeSelf == true)
+        {
+            Debug.Log("stopwatch stops here");
+        }
+    }
+
+    public void doorUnlockFunction() 
+    {
+        if (!isInstantiated)
+        {
+        Instantiate(crowbar, cbSpawnner.transform);
+        Instantiate(key, keySpawnner.transform);
+        isInstantiated = true;
         }
 
     }
