@@ -85,7 +85,6 @@ public class TriggerSystem : MonoBehaviour
         Instantiate(key, keySpawnner.transform);
         isInstantiated = true;
         }
-
     }
     // private void OnTriggerExit(Collider other)
     // {

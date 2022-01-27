@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - SaveData
     - Timer
     - TriggerSystem
+    - doorCollision
     - tempChange
     Oculus.Platform.dll:
     - Oculus.Platform.PlatformSettings
@@ -190,6 +191,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15056}
     - Class: 114
       Script: {instanceID: 15068}
+    - Class: 114
+      Script: {instanceID: 19256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2035,6 +2038,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: fd43008b38adf199c002f391abb8c572
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: doorCollision
   platform: 13
   scenePathNames:
   - Assets/Scenes/Final scene.unity

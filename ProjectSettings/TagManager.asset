@@ -12,6 +12,8 @@ TagManager:
   - TempHigh
   - Pipe_B
   - rw5
+  - crowbar
+  - key
   layers:
   - Default
   - TransparentFX
