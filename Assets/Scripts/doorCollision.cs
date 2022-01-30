@@ -21,7 +21,7 @@ public class doorCollision : MonoBehaviour
         }
         if (other.collider.tag == "key")
         {
-            Invoke("keyCollision", 5);
+            Invoke("keyCollision", 2);
         }
         //crowbar collides with door.
         //After 10 seconds, an event should happen.
@@ -30,20 +30,17 @@ public class doorCollision : MonoBehaviour
         //Walking through the light gives a feedback.
         //Feedback lets the user know that they are safe.    
     }
-    private void crowbarCollision()
+    public void crowbarCollision()
     {
-        Destroy(GameObject.Find("crowbar"));
-        rb.WakeUp();
+        rb.isKinematic = false;
         if (!rb.IsSleeping() && !isInstantiated)
         {
         Instantiate(whiteLight, wlSpawnner.transform);
         isInstantiated = true;
         }
     }
-    private void keyCollision()
+    public void keyCollision()
     {
-        Destroy(GameObject.Find("key"));
-        rb.WakeUp();
         if (!rb.IsSleeping() && !isInstantiated)
         {
         Instantiate(whiteLight, wlSpawnner.transform);

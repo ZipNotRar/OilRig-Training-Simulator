@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - TriggerSystem
     - doorCollision
     - tempChange
+    - wlDetection
     Oculus.Platform.dll:
     - Oculus.Platform.PlatformSettings
     Oculus.Spatializer.dll:
@@ -28,7 +29,6 @@ ScriptsOnlyBuild:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
-    - OVRControllerHelper
     - OVRDebugInfo
     - OVRGrabbable
     - OVRHand
@@ -49,6 +49,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -95,8 +103,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -119,8 +125,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12098}
     - Class: 114
       Script: {instanceID: 12418}
-    - Class: 114
-      Script: {instanceID: 12428}
     - Class: 114
       Script: {instanceID: 12488}
     - Class: 114
@@ -174,25 +178,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14186}
     - Class: 114
-      Script: {instanceID: 14382}
+      Script: {instanceID: 14242}
     - Class: 114
-      Script: {instanceID: 14446}
+      Script: {instanceID: 14384}
     - Class: 114
-      Script: {instanceID: 14532}
+      Script: {instanceID: 14448}
     - Class: 114
-      Script: {instanceID: 14678}
+      Script: {instanceID: 14534}
     - Class: 114
-      Script: {instanceID: 14850}
+      Script: {instanceID: 14682}
     - Class: 114
-      Script: {instanceID: 14930}
+      Script: {instanceID: 14854}
     - Class: 114
-      Script: {instanceID: 15050}
+      Script: {instanceID: 14934}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 15054}
     - Class: 114
-      Script: {instanceID: 15068}
+      Script: {instanceID: 15060}
     - Class: 114
-      Script: {instanceID: 19256}
+      Script: {instanceID: 15072}
+    - Class: 114
+      Script: {instanceID: 51018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1638,6 +1644,12 @@ ScriptsOnlyBuild:
     className: EnableSwitch
   - hash:
       serializedVersion: 2
+      Hash: fd43008b38adf199c002f391abb8c572
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: doorCollision
+  - hash:
+      serializedVersion: 2
       Hash: dbb1a6051987b4922d94d1caad387b1c
     assemblyName: Oculus.Spatializer.dll
     namespaceName: 
@@ -1786,6 +1798,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c744db285029cf24a2a6b0d2c361c2d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnableKinematics
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2040,10 +2058,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: fd43008b38adf199c002f391abb8c572
+      Hash: b557d004dd91dca9d0a591c06e9a7fb3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: doorCollision
+    className: wlDetection
   platform: 13
   scenePathNames:
   - Assets/Scenes/Final scene.unity
