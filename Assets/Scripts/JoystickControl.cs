@@ -17,6 +17,8 @@ public class JoystickControl : MonoBehaviour
 
     public GameObject alarm;
     public bool looking;
+    public bool alarmActive = false;
+    public AudioSource fogAlarmSound;
 
     int hitCount = 0;
     void Update()
@@ -33,7 +35,6 @@ public class JoystickControl : MonoBehaviour
             onForwardTilt.Invoke();
             Debug.Log("Forward" + forwardBackWardTilt);
         }
-
         // sideTosideTilt = topOfJoystick.rotation.eulerAngles.z;
         // if(sideTosideTilt < 355 && sideTosideTilt > 290)
         // {
@@ -80,6 +81,7 @@ public class JoystickControl : MonoBehaviour
         if (hitCount == 2000)
         {
             alarm.tag = "fireAlarmTag";
+            fogAlarmSound.Play();
         }
     }
 }

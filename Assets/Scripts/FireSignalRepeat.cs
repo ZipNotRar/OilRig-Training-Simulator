@@ -6,6 +6,7 @@ public class FireSignalRepeat : MonoBehaviour
 {
     public Animator fsAnimator;
     public RuntimeAnimatorController fsanimController;
+    public AudioSource fireSignal;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +16,6 @@ public class FireSignalRepeat : MonoBehaviour
     {
         fsAnimator.enabled = true;
         fsAnimator.runtimeAnimatorController = fsanimController;
+        fireSignal.Play();
     }
 }

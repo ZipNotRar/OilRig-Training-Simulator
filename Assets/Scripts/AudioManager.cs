@@ -5,19 +5,13 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public bool rw1 = false;
-    public AudioSource as1;
+    public AudioSource doorSound;
 
-    private void OnTriggerStay(Collider other) {
-        if (other.name == "Cubo")
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.GetComponent<doorCollision>())
         {
-            rw1 = true;
-            if (rw1 == true)
-            {
-                Debug.Log("play recording now");
-                as1.Play();
-            }
+        doorSound.Play();
         }
-
     }
 }

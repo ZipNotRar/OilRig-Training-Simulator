@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - FireSignalRepeat
     - GestureDetector
     - HandTrackinGrabber
@@ -101,6 +102,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -125,6 +130,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12098}
     - Class: 114
       Script: {instanceID: 12418}
+    - Class: 114
+      Script: {instanceID: 12472}
     - Class: 114
       Script: {instanceID: 12488}
     - Class: 114
@@ -158,8 +165,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13484}
     - Class: 114
-      Script: {instanceID: 13486}
-    - Class: 114
       Script: {instanceID: 13544}
     - Class: 114
       Script: {instanceID: 13750}
@@ -190,15 +195,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14854}
     - Class: 114
-      Script: {instanceID: 14934}
-    - Class: 114
       Script: {instanceID: 15054}
     - Class: 114
       Script: {instanceID: 15060}
     - Class: 114
       Script: {instanceID: 15072}
     - Class: 114
-      Script: {instanceID: 51018}
+      Script: {instanceID: 15138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -720,7 +723,7 @@ ScriptsOnlyBuild:
     className: GrabbableCrosshair
   - hash:
       serializedVersion: 2
-      Hash: 69723ec3844392eed7c3008933c73781
+      Hash: 56f2a9927002a74f3ead08448c731e20
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioManager
@@ -924,7 +927,7 @@ ScriptsOnlyBuild:
     className: InteractableRegistry
   - hash:
       serializedVersion: 2
-      Hash: 40e78ede43ad944a0982b4cddb0af94a
+      Hash: 5f98561e473b56990718ce6cc6bfb70f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireSignalRepeat
@@ -1632,7 +1635,7 @@ ScriptsOnlyBuild:
     className: OVRMeshRenderer
   - hash:
       serializedVersion: 2
-      Hash: c187f8f4ae0acccdb8fccb8bd8206d3e
+      Hash: e54fc8ff69b04c01bc28ab9f03c4edc7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JoystickControl
@@ -1644,7 +1647,7 @@ ScriptsOnlyBuild:
     className: EnableSwitch
   - hash:
       serializedVersion: 2
-      Hash: fd43008b38adf199c002f391abb8c572
+      Hash: 49454b51ad03fe1a7aab3ba0ff598473
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: doorCollision
@@ -2034,6 +2037,12 @@ ScriptsOnlyBuild:
     className: OVRLipSyncContextTextureFlip
   - hash:
       serializedVersion: 2
+      Hash: b557d004dd91dca9d0a591c06e9a7fb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: wlDetection
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2056,12 +2065,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: b557d004dd91dca9d0a591c06e9a7fb3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: wlDetection
   platform: 13
   scenePathNames:
   - Assets/Scenes/Final scene.unity
