@@ -53,10 +53,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -137,71 +135,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12560}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 12820}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 12858}
-    - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 12860}
     - Class: 114
       Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 13318}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13360}
+      Script: {instanceID: 13320}
     - Class: 114
-      Script: {instanceID: 13400}
+      Script: {instanceID: 13362}
     - Class: 114
-      Script: {instanceID: 13458}
+      Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13460}
     - Class: 114
-      Script: {instanceID: 13544}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13750}
+      Script: {instanceID: 13546}
     - Class: 114
-      Script: {instanceID: 13796}
+      Script: {instanceID: 13752}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13798}
     - Class: 114
-      Script: {instanceID: 13916}
+      Script: {instanceID: 13904}
     - Class: 114
-      Script: {instanceID: 13926}
+      Script: {instanceID: 13918}
     - Class: 114
-      Script: {instanceID: 13930}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14168}
+      Script: {instanceID: 13932}
     - Class: 114
-      Script: {instanceID: 14186}
+      Script: {instanceID: 14170}
     - Class: 114
-      Script: {instanceID: 14242}
+      Script: {instanceID: 14188}
     - Class: 114
-      Script: {instanceID: 14384}
+      Script: {instanceID: 14244}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14386}
     - Class: 114
-      Script: {instanceID: 14534}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 14682}
+      Script: {instanceID: 14536}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14684}
     - Class: 114
-      Script: {instanceID: 15054}
+      Script: {instanceID: 14856}
     - Class: 114
-      Script: {instanceID: 15060}
+      Script: {instanceID: 15056}
     - Class: 114
-      Script: {instanceID: 15072}
+      Script: {instanceID: 15062}
     - Class: 114
-      Script: {instanceID: 15138}
+      Script: {instanceID: 15074}
+    - Class: 114
+      Script: {instanceID: 15140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -769,6 +767,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Spatializer.dll
     namespaceName: 
     className: ONSPAudioSource
+  - hash:
+      serializedVersion: 2
+      Hash: 6df13057e914319ce9f7216ec33405cc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerFalls
   - hash:
       serializedVersion: 2
       Hash: 4810b3707d5fd5dc0d4e93afb64fcd4b
