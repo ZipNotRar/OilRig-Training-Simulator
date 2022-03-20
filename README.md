@@ -14,9 +14,5 @@
 ### Additionally, there are 2 Videoclips which will give you a run-through of what to expect in the game and the internal sections of each script.
 Run-Through             |  Code-Explaination
 :-------------------------:|:-------------------------:
-Space for the 1st Video | [![](http://img.youtube.com/vi/bnEiD5oTgOc/0.jpg)](http://www.youtube.com/watch?v=bnEiD5oTgOc "Lake Venture")
-### Additionally, there are 2 Videoclips which will give you a run-through of what to expect in the game and the internal sections of each script.
-Run-Through             |  Code-Explaination
-:-------------------------:|:-------------------------:
 [![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](http://www.youtube.com/watch?v=_fxo8h80w28 "Stardome - A 3D Dome Painting Experience!!") | [![](http://img.youtube.com/vi/7ikp7RgcbZM/0.jpg)](http://www.youtube.com/watch?v=7ikp7RgcbZM "StarDome - Code Explaination")
 [![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](http://www.youtube.com/watch?v=_fxo8h80w28 "Stardome - A 3D Dome Painting Experience!!") | [![](http://img.youtube.com/vi/7ikp7RgcbZM/0.jpg)](http://www.youtube.com/watch?v=7ikp7RgcbZM "StarDome - Code Explaination")
