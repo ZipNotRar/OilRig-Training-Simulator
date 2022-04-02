@@ -12,4 +12,4 @@
 ### Additionally, a Videoclip will give you a quick demo of the software..
 Run-Through             |
 :-------------------------:|
-[![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](http://www.youtube.com/watch?v=_fxo8h80w28 "Stardome - A 3D Dome Painting Experience!!") |
+[![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](https://youtu.be/sYnfYWVbeMs "Oil Rig Training Simulator") |
