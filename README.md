@@ -29,6 +29,6 @@
 3. Once you are done with the above step, please find a text file on This PC\Quest 2\Internal shared storage\Android\data\com.VRForTrainingSim.OilRigTrainingSimulator\files\Timestamp.txt.
 
 ### Additionally, a Videoclip will give you a quick demo of the software..
-Run-Through             |
+Demo             |
 :-------------------------:|
 [![](https://i.ytimg.com/vi/sYnfYWVbeMs/maxresdefault.jpg)](https://youtu.be/sYnfYWVbeMs "Oil Rig Training Simulator") |
