@@ -9,7 +9,7 @@
 * Finally, the [**TriggerSystem script**](Assets/Scripts/TriggerSystem.cs) uses triggers like button presses, lever pulls and other mechanics to call events generated from the script itself, this script created the order in which events will be triggered for the player 
 * Finally, the [**HandTrackingGrabber script**](Assets/Scripts/HandTrackinGrabber.cs) uses the "pinch" feature provided by oculus's finger tracking system to let the player grab objects by simply pinching on them in VR environment. While doing so, they can also move around with the GestureDetector script to interact with other objects.
 
-### Additionally, a Videoclip which will give you a run-through of what to expect in the game and the internal sections of each script.
-Run-Through             |  Code-Explaination
-:-------------------------:|:-------------------------:
-[![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](http://www.youtube.com/watch?v=_fxo8h80w28 "Stardome - A 3D Dome Painting Experience!!") | [![](http://img.youtube.com/vi/7ikp7RgcbZM/0.jpg)](http://www.youtube.com/watch?v=7ikp7RgcbZM "StarDome - Code Explaination")
+### Additionally, a Videoclip will give you a quick demo of the software..
+Run-Through             |
+:-------------------------:|
+[![](http://img.youtube.com/vi/_fxo8h80w28/0.jpg)](http://www.youtube.com/watch?v=_fxo8h80w28 "Stardome - A 3D Dome Painting Experience!!") |
