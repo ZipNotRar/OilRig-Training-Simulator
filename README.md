@@ -31,4 +31,4 @@
 ### Additionally, a Videoclip will give you a quick demo of the software..
 Demo             |
 :-------------------------:|
-[![](https://i.ytimg.com/vi/RDRXlddaEws/0.jpg)](https://youtu.be/RDRXlddaEws "GoodV/SEvil") |
+[![](https://i.ytimg.com/vi/sYnfYWVbeMs/0.jpg)](https://youtu.be/sYnfYWVbeMs "Oil Rig Training Simulator") |
